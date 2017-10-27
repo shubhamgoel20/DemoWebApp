@@ -21,7 +21,7 @@ this.getHeroes();
 }
 
 getHeroes(): void {
-  this.heroes = this.heroService.getHeroes();
+this.heroService.getHeroes().then(heroarray => this.heroes = heroarray);
 }
 
 selectHero(hero: Hero): void{
