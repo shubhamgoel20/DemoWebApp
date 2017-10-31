@@ -13,6 +13,8 @@ import { InMemoryDataService }  from './in-memory-data.service';
      
 import { AppComponent }    from './app.component';
 import { DashbordComponent } from './dashbord/dashbord.component';
+import { HeroSearchComponent } from './hero-search/hero-search.component';
+import { HeroSearchService } from './hero-search.service';
      
     @NgModule({
       imports: [
@@ -25,9 +27,10 @@ import { DashbordComponent } from './dashbord/dashbord.component';
       ],
       declarations: [
         AppComponent,
-        DashbordComponent
+        DashbordComponent,
+        HeroSearchComponent
       ],
-      providers: [],
+      providers: [HeroSearchService],
       bootstrap: [ AppComponent ]
     })
     export class AppModule {
